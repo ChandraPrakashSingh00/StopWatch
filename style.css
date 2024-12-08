@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f4f6;
+}
+
+.stopwatch-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.display {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start {
+    background: #28a745;
+    color: white;
+}
+
+#start:hover {
+    background: #218838;
+}
+
+#stop {
+    background: #dc3545;
+    color: white;
+}
+
+#stop:hover {
+    background: #c82333;
+}
+
+#reset {
+    background: #ffc107;
+    color: black;
+}
+
+#reset:hover {
+    background: #e0a800;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .display {
+        font-size: 28px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
